@@ -5,7 +5,7 @@ var burger = {
   //all is function. it takes a callback from our ORM 
   all: function(cb) {
 //not sure 
-    orm.SelectAll("burgers", function(res) {
+    orm.selectAll("burgers", function(res) {
   //the ORM gives this function the data contained in res    
       cb(res);
     });

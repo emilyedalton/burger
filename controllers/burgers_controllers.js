@@ -4,8 +4,8 @@ var express = require("express");
 // you have routes delinated and each of them will be correlated into a controller file which will be required into your server file 
 var router = express.Router();
 
-// Import the model (cat.js) to use its database functions.
-var cat = require("../models/burger.js");
+// Import the model (burger.js) to use its database functions.
+var burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
 // We're going ot have a rouute of slash 
@@ -17,7 +17,8 @@ router.get("/", function(req, res) {
   //once we have the data we are making a handlebars object
   burger.all(function(data) {
     var hbsObject = {
-      cats: data
+        //burgers is a property in the array of objects...the data are arrays of objects from the DB
+      burgers: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);

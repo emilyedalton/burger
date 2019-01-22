@@ -45,7 +45,7 @@ var orm = {
 //all method gets all of the data
 // the method takes in a table name and a callback
 // this method should be named selectAll per assignment requirements
-  all: function(tableInput, cb) {
+  selectAll: function(tableInput, cb) {
 // this is where you get data from the database     
     var queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, function(err, result) {
