@@ -3,9 +3,21 @@
 <h2>make a burger!</h2>
 
 <ul>
+    <div>
   {{#each burgers}}
   <p>
   {{this.id}}. {{this.burger_name}}
+  <button data-id="{{this.id}}" class="eatburg">Devour it</button>
   </p>
   {{/each}}
+    </p>
 </ul>
+</div>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burg">Enter the burger you would like to eat</label>
+    <input type="text" id="burg" name="name">
+  </div>
+<button type="submit">Make a burger</button>
+</form>

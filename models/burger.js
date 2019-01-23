@@ -9,13 +9,13 @@ var burger = {
   //the ORM gives this function the data contained in res    
       cb(res);
     });
-//   },
-//   // The variables cols and vals are arrays.
-//   //insert should always map to create
-//   insertOne: function(cols, vals, cb) {
-//     orm.create("burgers", cols, vals, function(res) {
-//       cb(res);
-//     });
+  },
+  // The variables cols and vals are arrays.
+  //insert should always map to create
+  insertOne: function(cols, vals, cb) {
+    orm.insertOne("burgers", cols, vals, function(res) {
+      cb(res);
+    });
 //   },
 //   updateOne: function(objColVals, condition, cb) {
 //     orm.update("burgers", objColVals, condition, function(res) {

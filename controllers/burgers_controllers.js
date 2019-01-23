@@ -23,16 +23,16 @@ router.get("/", function(req, res) {
     console.log(hbsObject);
     res.render("index", hbsObject);
   });
+});
+//inserting
+router.post("/burger/new", function(req, res) {
+  burger.insertOne(['burger_name'], [req.body.burger_name], function(result) {
+    // Send back the ID of the new quote
+    res.redirect('/')
+  });
 // });
-// //inserting
-// router.post("/api/cats", function(req, res) {
-//   burger.create(["name", "sleepy"], [req.body.name, req.body.sleepy], function(result) {
-//     // Send back the ID of the new quote
-//     res.json({ id: result.insertId });
-//   });
-// });
-// // updating
-// router.put("/api/cats/:id", function(req, res) {
+// updating
+// router.put("/api/bueger/:id", function(req, res) {
 //   var condition = "id = " + req.params.id;
 
 //   console.log("condition", condition);

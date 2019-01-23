@@ -58,11 +58,30 @@ var orm = {
 
 //the whole statement should end with these three sets of brances       
     });
-  }
+  },
 //---------------------------------//
 //method for create will go here. This will be called insertOne.
 //---------------------------------//
+insertOne: function(table, cols, vals, cb) {
+    var queryString = "INSERT INTO " + table;
 
+    queryString += " (";
+    queryString += cols.toString();
+    queryString += ") ";
+    queryString += "VALUES (";
+    queryString += printQuestionMarks(vals.length);
+    queryString += ") ";
+
+    console.log(queryString);
+
+    connection.query(queryString, vals, function(err, result) {
+      if (err) {
+        throw err;
+      }
+
+      cb(result);
+    });
+  }
 //---------------------------------//
 //method for update will go here. This will be called updateOne.
 //---------------------------------//
