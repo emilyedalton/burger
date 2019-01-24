@@ -32,7 +32,7 @@ router.post("/burger/new", function(req, res) {
   });
 });
 // updating
-router.put("/burger/:id", function(req, res) {
+router.put("/api/burger/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   // console.log("condition", condition);

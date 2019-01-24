@@ -105,5 +105,5 @@ updateOne: function(table, objColVals, condition, cb) {
 }
 //brace below ends the orm object  
 }
-// Export the orm object for the model (cat.js).
+// Export the orm object for the model.
 module.exports = orm;
