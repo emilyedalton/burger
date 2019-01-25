@@ -20,3 +20,25 @@
       });
     });
   });
+
+  $(function() {
+    $(".eatburg").on("click", function(event) {
+      var id = $(this).data("id");
+      // var newSleep = $(this).data("newsleep");
+  
+      var eaten = {
+        id: 1
+      };
+  
+      // Send the PUT request.
+      $.ajax("/api/burger/" + id, {
+        type: "PUT",
+        data: eaten
+      }).then(
+        function() {
+          console.log("thisburger was eatean", eaten);
+          // Reload the page to get the updated list
+          location.reload();
+        });
+      });
+    });
