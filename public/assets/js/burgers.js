@@ -9,6 +9,9 @@
     };
 
     // Send the POST request.
+    //pass in two parameters to make the jQuery ajax request
+    //A string containing the URL to which the request is sent.
+    //A set of key/value pairs that configure the Ajax request.
     $.ajax("/api/burger/new", {
       type: "POST",
       data: newburger
