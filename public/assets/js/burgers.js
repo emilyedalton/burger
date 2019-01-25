@@ -9,7 +9,7 @@
     };
 
     // Send the POST request.
-    $.ajax("/burger/new", {
+    $.ajax("/api/burger/new", {
       type: "POST",
       data: newburger
     }).then(
@@ -19,15 +19,15 @@
         location.reload();
       });
     });
-  });
+  
 
-  $(function() {
-    $(".eatburg").on("click", function(event) {
+ 
+    $(".burgerPUT").on("click", function(event) {
       var id = $(this).data("id");
       // var newSleep = $(this).data("newsleep");
   
       var eaten = {
-        id: 1
+        devoured: 1
       };
   
       // Send the PUT request.
@@ -41,4 +41,4 @@
           location.reload();
         });
       });
-    });
+  });
