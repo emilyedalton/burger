@@ -1,5 +1,7 @@
 #outerContainer {
     border: solid 2px black;
+    display: flex;
+    justify-content: space-evenly;
 
 
 }
