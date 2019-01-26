@@ -1,3 +1,25 @@
+h1{
+
+    font-family: 'Condiment', cursive;
+    color: red;
+   font-size: 5em;
+   text-align: center;
+}
+
+h2{
+
+    font-family: 'Condiment', cursive;
+    color: red;
+}
+body{
+    background-color: yellow;
+}
+.create-form{
+
+    border: solid 2px black;
+
+
+}
 #outerContainer {
     border: solid 2px black;
     display: flex;
