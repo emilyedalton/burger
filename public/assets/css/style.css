@@ -10,6 +10,7 @@ h2{
 
     font-family: 'Condiment', cursive;
     color: red;
+    font-size: 400%;
 }
 h3{
     text-align: center;
@@ -20,25 +21,22 @@ body{
 }
 .create-form{
 
-    border: solid 2px black;
+    justify-content: space-between;
+    flex-direction: column;
+    /* height: 100vh; */
+    display: flex;
+}
 
-
+#burg{
+    width:100%;
 }
 #outerContainer {
-    border: solid 2px black;
     display: flex;
     justify-content: space-evenly;
 
 
 }
 
-#containerLeft
-{
-    border: solid 2px black;
-}
 
 
-#containerRight
-{
-    border: solid 2px black;
-}
+
