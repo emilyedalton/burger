@@ -1,5 +1,4 @@
-<h1>Burgers!</h1>
-<h3>Why? I don't know, just embrace it.</h3>
+<h1>burgers!</h1>
 
 <div id="outerContainer">
   <div id="containerLeft">
@@ -8,7 +7,7 @@
       {{#each burgers}} {{#unless devoured}}
       <p>
         {{this.id}}. {{this.burger_name}}
-        <button data-id="{{this.id}}" class="burgerPUT">Devour it</button>
+        <button data-id="{{this.id}}" class="burgerPUT">devour it!</button>
       </p>
       {{/unless}} {{/each}}
       </p>
@@ -19,11 +18,11 @@
   <form class="create-form">
 
     <div class="form-group">
-      <h2 for="burg">Enter the burger you would like to eat</h2>
+      <h2 for="burg">enter the burger you would like to eat</h2>
       <br>
       <input type="text" id="burg" name="burger_name">
     </div>
-    <button type="submit">Make a burger</button>
+<img src="./assets/images/burger.png" id="burgerpic" style="width:150px;height:150px;" alt="burger">    <button type="submit">make a burger</button>
     </form>
 
     <div id="containerRight">
