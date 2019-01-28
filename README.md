@@ -1,5 +1,5 @@
 # burger
-![burger](/assets/images/burger.png "Logo")
+![burger](public/assets/images/burger.png "Logo")
 
 [Burger](https://stormy-mountain-12270.herokuapp.com/) is a data-persistient, full stack application utilizing an MVC architecture and CRUD functionalities. Internal representations of the application's data are handled in a homegrown ORM and the handlebars view engine is used to present that information to the user. 
 
@@ -13,7 +13,8 @@ Burger performs three out of the four basic functions of persistient storage.
 
 *  Updates data by changing the item's 'devoured' status from true to false. 
 
-## Technoligies Used: 
+## Technologies Used
+
 
 * Express 
 * Express-Handlebars
