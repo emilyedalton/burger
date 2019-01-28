@@ -1,5 +1,4 @@
 # burger
-![burger](public/assets/images/burger.png = 200x200 "Logo")
 
 [Burger](https://stormy-mountain-12270.herokuapp.com/) is a data-persistient, full stack application utilizing an MVC architecture and CRUD functionalities. Internal representations of the application's data are handled in a homegrown ORM and the handlebars view engine is used to present that information to the user. 
 
