@@ -15,10 +15,10 @@ Burger performs three out of the four basic functions of persistient storage.
 ## Technologies Used
 
 
-* Express 
-* Express-Handlebars
-* MySQL 
-* Node
+* [Express](https://expressjs.com/)
+* [Express-Handlebars](https://www.npmjs.com/package/express-handlebars)
+* [MySQL](https://www.npmjs.com/package/mysql)
+* [Node](https://nodejs.org/en/)
 
 ## Dirctions for future development
 
