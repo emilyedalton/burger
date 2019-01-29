@@ -28,11 +28,11 @@ app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
 // we've moved all of our routs into what we're calling Controllers
-//prior to this we would declair our routes in the server file
+//prior to this we would routes were contained in the server file
 var routes = require("./controllers/burgers_controllers");
 // now we're 
 app.use(routes);
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log("App now listening at localhost:" + PORT);
 })

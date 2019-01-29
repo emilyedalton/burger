@@ -1,24 +1,21 @@
 h1{
-
     font-family: 'Condiment', cursive;
     color: red;
-   font-size: 6em;
-   text-align: center;
+    font-size: 6em;
+    text-align: center;
 }
 
-h2
-{
-
+h2{
     font-family: 'Condiment', cursive;
     color: red;
     font-size: 2em;
 }
+
 h3{
     text-align: center;
     font-size: 2em;
-
-
 }
+
 body{
     background-color: yellow;
 }
@@ -29,18 +26,15 @@ button{
     background-color: white;
     border: 1px solid red;
     font-family: 'Fjalla One', sans-serif;
-
 }
 
 .create-form{
-
     flex-direction: column;
     display: flex;
 }
+
 .burgerCREATE{
-
     margin-top: 10px;
-
 }
 
 #burgerpic{
@@ -48,26 +42,21 @@ button{
     margin:auto;
 }
 
-
-
 #burg{
     width:100%;
 }
+
 #outerContainer {
     display: flex;
     justify-content: space-evenly;
-
-
 }
-#containerRight 
-{
-max-width: 20%;
 
+#containerRight {
+max-width: 20%;
 }
-#containerLeft 
-{
-max-width: 20%;
 
+#containerLeft {
+max-width: 20%;
 }
 
 
